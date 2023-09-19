@@ -1,5 +1,35 @@
 {% extends "base.html" %}
 {% block title%}Sign Up{% endblock %}
 {%block content%}
-<h1>This is the Sign Up page</h1>
+<form method="post" >
+    <div class="card mt-2">
+        <div class="card-header">
+            Sign Up
+        </div>
+        <div class="card-body">
+            <div class="form-group">
+                <label for="exampleInputName">Name</label>
+                <input type="text" class="form-control" id="userName" name="userName">
+              </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="userEmail" name="userEmail" aria-describedby="emailHelp">
+              </div>
+
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="userPass" name="userPass">
+              </div>
+              
+              <div class="form-group">
+                <label for="exampleInputPasswordConfirm">Password(Confirm)</label>
+                <input type="password" class="form-control" id="userPassConfirm" name="userPassConfirm">
+              </div>
+
+              <button type="submit" class="btn btn-primary">Sign Up</button>
+            
+        </div>
+        </div>
+        
+    </form>
 {% endblock%}
